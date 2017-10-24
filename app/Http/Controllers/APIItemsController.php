@@ -11,4 +11,9 @@ class APIItemsController extends Controller
     {
         return Item::all();
     }
+
+    public function show(Item $item)
+    {
+        return $item;
+    }
 }

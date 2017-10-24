@@ -18,4 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/items', 'APIItemsController@index');
+Route::get('/items/{items}', 'APIItemsController@show');
 
+
+// copiar test + controlador + api.php -> items
